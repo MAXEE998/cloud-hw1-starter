@@ -1,25 +1,12 @@
 import logging
 import boto3
-import json
 from opensearchpy import OpenSearch, RequestsHttpConnection
-from decimal import *
-
-
-class DecimalEncoder(json.JSONEncoder):
-    def default(self, obj):
-        # 👇️ if passed in object is instance of Decimal
-        # convert it to a string
-        if isinstance(obj, Decimal):
-            return str(obj)
-        # 👇️ otherwise use the default behavior
-        return json.JSONEncoder.default(self, obj)
-
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 
 sqs = boto3.client('sqs')
-queue_url = 'https://sqs.us-east-1.amazonaws.com/814655805539/DiningSuggestion.fifo'
+queue_url = 'https://sqs.us-east-1.amazonaws.com/814655805539/DiningSuggestionRequests'
 
 openSearchHost = "search-assignment2-m3x5c4zswkalnoqpcpjqv47apm.us-east-1.es.amazonaws.com" 
 openSearch = OpenSearch(
@@ -61,9 +48,21 @@ def search(cuisine):
     finally:
         return ids
 
+def compose_email(attributes, recommendations):
+    template = "Hello! Here are my %s restaurants suggestions for %s people, for today at %s:\n %s. \n\nEnjoy your meal!"
+    restaurant_template = "%d. %s at \n%s"
+    restaurant_strings = []
+    for i, each in enumerate(recommendations):
+        restaurant_strings.append(restaurant_template % (i+1, each["name"], "\n".join(each["address"]["display_address"])))
+    return template % (
+        attributes["cuisine"],
+        attributes["numberOfPeople"],
+        attributes["diningTime"],
+        "\n\n".join(restaurant_strings)
+    )
 
-def process_request(email, cuisine):
-    ids = search(cuisine)
+def process_request(attributes):
+    ids = search(attributes["cuisine"])
     batch_keys = {
         restaurant_table.name: {
             'Keys': [{'id': id} for id in ids]
@@ -71,12 +70,12 @@ def process_request(email, cuisine):
     }
     response = dynamoDB.batch_get_item(RequestItems=batch_keys)
 
-    email_body = json.dumps(response, cls=DecimalEncoder, indent=4)
+    email_body = compose_email(attributes, response["Responses"]["yelp-restaurants"])
     response = ses.send_email(
             Source='maxeehungngai@gmail.com',
             Destination={
                     'ToAddresses': [
-                        email,
+                        attributes["email"],
                     ],
                 },
                 Message={
@@ -92,6 +91,15 @@ def process_request(email, cuisine):
         )
     print2(response)
 
+def process_attributes(raw):
+    return {
+        "email": raw["email"]["StringValue"],
+        "cuisine": raw["cuisine"]["StringValue"],
+        "numberOfPeople": raw["numberOfPeople"]["StringValue"],
+        "location": raw["location"]["StringValue"],
+        "diningTime": raw["diningTime"]["StringValue"],
+    }
+
 def lambda_handler(event, context):
     """
     Route the incoming request based on intent.
@@ -105,8 +113,8 @@ def lambda_handler(event, context):
 
     if "Messages" in response:
         for msg in response["Messages"]:
-            attrbutes = msg["MessageAttributes"]
-            process_request(attrbutes["email"]["StringValue"], attrbutes["cuisine"]["StringValue"])
+            attrbutes = process_attributes(msg["MessageAttributes"])
+            process_request(attrbutes)
             sqs.delete_message(QueueUrl=queue_url, ReceiptHandle=msg["ReceiptHandle"])
         return {"processed": len(response["Messages"])}
     return {"processed": 0}

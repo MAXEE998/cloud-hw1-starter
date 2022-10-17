@@ -1,0 +1,201 @@
+{
+    "Responses": {
+        "yelp-restaurants": [
+            {
+                "inserted_at": "1665938303",
+                "rating": "4.0",
+                "categories": [
+                    {
+                        "title": "Indian",
+                        "alias": "indpak"
+                    },
+                    {
+                        "title": "Comfort Food",
+                        "alias": "comfortfood"
+                    },
+                    {
+                        "title": "Halal",
+                        "alias": "halal"
+                    }
+                ],
+                "zip_code": "10012",
+                "address": {
+                    "country": "US",
+                    "address3": "",
+                    "address2": "",
+                    "city": "New York",
+                    "address1": "194 Bleecker St",
+                    "display_address": [
+                        "194 Bleecker St",
+                        "New York, NY 10012"
+                    ],
+                    "state": "NY",
+                    "zip_code": "10012"
+                },
+                "id": "V2oWqXcoJkgGeIPOaS9eDA",
+                "name": "Masala Times Greenwich Village",
+                "review_count": "567",
+                "coordinates": {
+                    "latitude": "40.7292728223798",
+                    "longitude": "-74.0015978515206"
+                }
+            },
+            {
+                "inserted_at": "1665938303",
+                "rating": "4.5",
+                "categories": [
+                    {
+                        "title": "Indian",
+                        "alias": "indpak"
+                    },
+                    {
+                        "title": "Wine Bars",
+                        "alias": "wine_bars"
+                    },
+                    {
+                        "title": "Cocktail Bars",
+                        "alias": "cocktailbars"
+                    }
+                ],
+                "zip_code": "10011",
+                "address": {
+                    "country": "US",
+                    "address3": null,
+                    "address2": "",
+                    "city": "New York",
+                    "address1": "60 Greenwich Ave",
+                    "display_address": [
+                        "60 Greenwich Ave",
+                        "New York, NY 10011"
+                    ],
+                    "state": "NY",
+                    "zip_code": "10011"
+                },
+                "id": "xWVHj2XNcxEg79Nkb5Zb6Q",
+                "name": "Semma",
+                "review_count": "133",
+                "coordinates": {
+                    "latitude": "40.736054206102615",
+                    "longitude": "-74.0005639"
+                }
+            },
+            {
+                "inserted_at": "1665938303",
+                "rating": "4.5",
+                "categories": [
+                    {
+                        "title": "Indian",
+                        "alias": "indpak"
+                    }
+                ],
+                "zip_code": "10002",
+                "address": {
+                    "country": "US",
+                    "address3": null,
+                    "address2": "",
+                    "city": "New York",
+                    "address1": "6 Clinton St",
+                    "display_address": [
+                        "6 Clinton St",
+                        "New York, NY 10002"
+                    ],
+                    "state": "NY",
+                    "zip_code": "10002"
+                },
+                "id": "_7BGw3YFNOTzP1Www3zB7g",
+                "name": "Mughlai Grill",
+                "review_count": "468",
+                "coordinates": {
+                    "latitude": "40.7210905",
+                    "longitude": "-73.9840446"
+                }
+            },
+            {
+                "inserted_at": "1665938303",
+                "rating": "4.0",
+                "categories": [
+                    {
+                        "title": "Indian",
+                        "alias": "indpak"
+                    }
+                ],
+                "zip_code": "10002",
+                "address": {
+                    "country": "US",
+                    "address3": null,
+                    "address2": "Essex Market, Store  34",
+                    "city": "New York",
+                    "address1": "119 Delancey St",
+                    "display_address": [
+                        "119 Delancey St",
+                        "Essex Market, Store  34",
+                        "New York, NY 10002"
+                    ],
+                    "state": "NY",
+                    "zip_code": "10002"
+                },
+                "id": "Txm8KtUh9Mn2E7980jTr5g",
+                "name": "Dhamaka",
+                "review_count": "288",
+                "coordinates": {
+                    "latitude": "40.7180658",
+                    "longitude": "-73.9881304"
+                }
+            },
+            {
+                "inserted_at": "1665938303",
+                "rating": "4.5",
+                "categories": [
+                    {
+                        "title": "Indian",
+                        "alias": "indpak"
+                    },
+                    {
+                        "title": "Halal",
+                        "alias": "halal"
+                    },
+                    {
+                        "title": "Bangladeshi",
+                        "alias": "bangladeshi"
+                    }
+                ],
+                "zip_code": "11375",
+                "address": {
+                    "country": "US",
+                    "address3": "",
+                    "address2": null,
+                    "city": "Forest Hills",
+                    "address1": "103-09 Metropolitan Ave",
+                    "display_address": [
+                        "103-09 Metropolitan Ave",
+                        "Forest Hills, NY 11375"
+                    ],
+                    "state": "NY",
+                    "zip_code": "11375"
+                },
+                "id": "rpzgv0Y6fIT6RcBsxFsrSg",
+                "name": "Paratha Wala",
+                "review_count": "459",
+                "coordinates": {
+                    "latitude": "40.71044",
+                    "longitude": "-73.84942"
+                }
+            }
+        ]
+    },
+    "UnprocessedKeys": {},
+    "ResponseMetadata": {
+        "RequestId": "32TM6VNUC1VR6MGPFK8LDU1907VV4KQNSO5AEMVJF66Q9ASUAAJG",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "server": "Server",
+            "date": "Sun, 16 Oct 2022 23:57:36 GMT",
+            "content-type": "application/x-amz-json-1.0",
+            "content-length": "3485",
+            "connection": "keep-alive",
+            "x-amzn-requestid": "32TM6VNUC1VR6MGPFK8LDU1907VV4KQNSO5AEMVJF66Q9ASUAAJG",
+            "x-amz-crc32": "1438889778"
+        },
+        "RetryAttempts": 0
+    }
+}

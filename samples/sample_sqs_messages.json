@@ -1,0 +1,73 @@
+{
+  "Messages": [
+    {
+      "MessageId": "890789da-3b01-4d65-8104-aebe55f31a2a",
+      "ReceiptHandle": "AQEBZD98bf6EsXZyKglhZ487pGwGVNXUiMvzEVf+y7cz03C9Ow+RwYNB5gDnL7LeXJy/Spu/e4ypiorbhu2MqNaAerQRbl+aeSV1Tw3PsDwj7cuIou3A4kSsz0cDPujPhc2G3tcRmVSVZ22ZNmBvSQaXRzzdQ/7i2865yoxydS8MxhDPns5ySqgMktpsfnb3TnpHA2JIkqlx/u/PqVdBSZ+gf8ha2Cc6edptOuLBh88wH0JPS05j3awuTG5/oZeP5w5Va5KnSqVEe8B0lIZyzZqvG/bsd/3NymCouXC0zAc9vVI68Un3OGsNFmbOfoMEDksu1z0EjXdGv17tE7aLOlELVBqXiPUBMNJ8V9jTnpLohHzp+w6xXL0taZnq9A7anPnGsnG3yIpAdM+ed3K4G/e9dQ==",
+      "MD5OfBody": "cc6160a0a52d791cf1c7b8be59ee37b0",
+      "Body": "Dining Suggestion Request",
+      "MD5OfMessageAttributes": "92368b0da666f30d44ffe66667126d51",
+      "MessageAttributes": {
+        "cuisine": {
+          "StringValue": "Chinese",
+          "DataType": "String"
+        },
+        "diningTime": {
+          "StringValue": "17:34",
+          "DataType": "String"
+        },
+        "email": {
+          "StringValue": "hl2752@nyu.edu",
+          "DataType": "String"
+        },
+        "location": {
+          "StringValue": "here",
+          "DataType": "String"
+        },
+        "numberOfPeople": {
+          "StringValue": "3",
+          "DataType": "Number"
+        }
+      }
+    },
+    {
+      "MessageId": "6f698577-691c-46da-b194-1185566b343a",
+      "ReceiptHandle": "AQEBS5V2q8kSRHAu4SG4GTEUXT/8le8lbiLqHL9pOLXCK+w2PUGmSNABqNteUYY/ZlhANdbYEbX6EnASqK6q5zi9KjKuKi0oRryJ4POFuQn2oGfyN6UB/RJTY3lorBhdeHIyL2NcJTvQH5g6DK97ktUaxfLLp4kp8eeIIFiPkYB0Qs42UMrdv6LoMoHnF3pAWo8WWqtDAik8cPEiob9qbkZIsN/idd7bDTntRq3l/tWqHRJRfmA5/sjt2RIs98UnQhw8Sj9ZW6h+8VOc9JeAXBEisr3NitDPsiaQBEkqlgy+Yi1sBrmV3QKQVVfJind7HnVTPNAyhSEsZv0AAhzpEOm+sGNt0P6wy6EODvoIqKyCXiw8dL+YsVWYAgsvYT896vSujk/pwH4lzrcgl34b+Z4WzA==",
+      "MD5OfBody": "cc6160a0a52d791cf1c7b8be59ee37b0",
+      "Body": "Dining Suggestion Request",
+      "MD5OfMessageAttributes": "84ce598e21d9aa9ffd2e111cdceff829",
+      "MessageAttributes": {
+        "cuisine": {
+          "StringValue": "chinese",
+          "DataType": "String"
+        },
+        "diningTime": {
+          "StringValue": "17:41",
+          "DataType": "String"
+        },
+        "email": {
+          "StringValue": "g@gmail.com",
+          "DataType": "String"
+        },
+        "location": {
+          "StringValue": "here",
+          "DataType": "String"
+        },
+        "numberOfPeople": {
+          "StringValue": "10",
+          "DataType": "Number"
+        }
+      }
+    }
+  ],
+  "ResponseMetadata": {
+    "RequestId": "2514c61d-55c4-5a45-af84-9ddb29329539",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amzn-requestid": "2514c61d-55c4-5a45-af84-9ddb29329539",
+      "date": "Sun, 16 Oct 2022 21:42:14 GMT",
+      "content-type": "text/xml",
+      "content-length": "2990"
+    },
+    "RetryAttempts": 0
+  }
+}

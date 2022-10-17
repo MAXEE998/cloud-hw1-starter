@@ -1,0 +1,60 @@
+{
+    "took": 7,
+    "timed_out": false,
+    "_shards": {
+        "total": 4,
+        "successful": 4,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "total": {
+            "value": 651,
+            "relation": "eq"
+        },
+        "max_score": 2.1771712,
+        "hits": [
+            {
+                "_index": "restaurants",
+                "_type": "_doc",
+                "_id": "-XYp6w50XbZfS90YddS5ew",
+                "_score": 2.1771712,
+                "_source": {
+                    "cuisine": "Thai"
+                }
+            },
+            {
+                "_index": "restaurants",
+                "_type": "_doc",
+                "_id": "8SbvBebzRYaZuyxF-GEIDQ",
+                "_score": 2.1771712,
+                "_source": {
+                    "cuisine": "Thai"
+                }
+            },
+            {
+                "_index": "restaurants",
+                "_type": "_doc",
+                "_id": "BKMCAYb9EAivUm3p-vrC9w",
+                "_score": 2.1771712,
+                "_source": {
+                    "cuisine": "Thai"
+                }
+            },
+            {
+                "_index": "restaurants",
+                "_type": "_doc",
+                "_id": "XlCaR9Q3fW37uhWuCx92mQ",
+                "_score": 2.1771712,
+            {
+                "_index": "restaurants",
+                "_type": "_doc",
+                "_id": "9v4l7pz4J709z0mkqUpQbw",
+                "_score": 2.1771712,
+                "_source": {
+                    "cuisine": "Thai"
+                }
+            }
+        ]
+    }
+}

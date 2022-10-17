@@ -1,0 +1,156 @@
+{
+ "messages": [
+  {
+   "content": "Something went wrong.",
+   "contentType": "PlainText"
+  },
+  {
+   "content": "Thank you!",
+   "contentType": "PlainText"
+  }
+ ],
+ "sessionState": {
+  "dialogAction": {
+   "type": "Close"
+  },
+  "intent": {
+   "name": "DiningSuggestionsIntent",
+   "slots": {
+    "cuisine": {
+     "value": {
+      "originalValue": "thai",
+      "interpretedValue": "thai",
+      "resolvedValues": [
+       "thai"
+      ]
+     }
+    },
+    "diningTime": {
+     "value": {
+      "originalValue": "19",
+      "interpretedValue": "19:00",
+      "resolvedValues": [
+       "19:00"
+      ]
+     }
+    },
+    "location": {
+     "value": {
+      "originalValue": "home",
+      "interpretedValue": "home",
+      "resolvedValues": [
+       "home"
+      ]
+     }
+    },
+    "numberOfPeople": {
+     "value": {
+      "originalValue": "3",
+      "interpretedValue": "3",
+      "resolvedValues": [
+       "3"
+      ]
+     }
+    },
+    "phoneNumber": {
+     "value": {
+      "originalValue": "9173782836",
+      "interpretedValue": "9173782836",
+      "resolvedValues": [
+       "9173782836"
+      ]
+     }
+    }
+   },
+   "state": "Failed",
+   "confirmationState": "Confirmed"
+  },
+  "sessionAttributes": {},
+  "originatingRequestId": "831a42fd-bd28-4c22-bcd7-c6a1eed9fe1d"
+ },
+ "interpretations": [
+  {
+   "nluConfidence": {
+    "score": 1
+   },
+   "intent": {
+    "name": "DiningSuggestionsIntent",
+    "slots": {
+     "cuisine": {
+      "value": {
+       "originalValue": "thai",
+       "interpretedValue": "thai",
+       "resolvedValues": [
+        "thai"
+       ]
+      }
+     },
+     "diningTime": {
+      "value": {
+       "originalValue": "19",
+       "interpretedValue": "19:00",
+       "resolvedValues": [
+        "19:00"
+       ]
+      }
+     },
+     "location": {
+      "value": {
+       "originalValue": "home",
+       "interpretedValue": "home",
+       "resolvedValues": [
+        "home"
+       ]
+      }
+     },
+     "numberOfPeople": {
+      "value": {
+       "originalValue": "3",
+       "interpretedValue": "3",
+       "resolvedValues": [
+        "3"
+       ]
+      }
+     },
+     "phoneNumber": {
+      "value": {
+       "originalValue": "9173782836",
+       "interpretedValue": "9173782836",
+       "resolvedValues": [
+        "9173782836"
+       ]
+      }
+     }
+    },
+    "state": "Failed",
+    "confirmationState": "Confirmed"
+   }
+  },
+  {
+   "intent": {
+    "name": "FallbackIntent",
+    "slots": {}
+   }
+  },
+  {
+   "nluConfidence": {
+    "score": 0.34
+   },
+   "intent": {
+    "name": "GreetingIntent",
+    "slots": {}
+   }
+  },
+  {
+   "nluConfidence": {
+    "score": 0.21
+   },
+   "intent": {
+    "name": "ThankYouIntent",
+    "slots": {}
+   }
+  }
+ ],
+ "requestAttributes": {},
+ "sessionId": "814655805539527"
+}

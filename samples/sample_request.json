@@ -1,0 +1,175 @@
+{
+    "sessionId": "814655805539527",
+    "inputTranscript": "yes",
+    "interpretations": [
+        {
+            "intent": {
+                "slots": {
+                    "phoneNumber": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "9173782836",
+                            "resolvedValues": [
+                                "9173782836"
+                            ],
+                            "interpretedValue": "9173782836"
+                        }
+                    },
+                    "cuisine": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "thai",
+                            "resolvedValues": [
+                                "thai"
+                            ],
+                            "interpretedValue": "thai"
+                        }
+                    },
+                    "location": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "new york",
+                            "resolvedValues": [
+                                "newyork"
+                            ],
+                            "interpretedValue": "newyork"
+                        }
+                    },
+                    "numberOfPeople": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "3",
+                            "resolvedValues": [
+                                "3"
+                            ],
+                            "interpretedValue": "3"
+                        }
+                    },
+                    "diningTime": {
+                        "shape": "Scalar",
+                        "value": {
+                            "originalValue": "9pm",
+                            "resolvedValues": [
+                                "21:00"
+                            ],
+                            "interpretedValue": "21:00"
+                        }
+                    }
+                },
+                "confirmationState": "Confirmed",
+                "name": "DiningSuggestionsIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 1
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "FallbackIntent",
+                "state": "ReadyForFulfillment"
+            }
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "GreetingIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.34
+        },
+        {
+            "intent": {
+                "slots": {},
+                "confirmationState": "None",
+                "name": "ThankYouIntent",
+                "state": "ReadyForFulfillment"
+            },
+            "nluConfidence": 0.21
+        }
+    ],
+    "sessionState": {
+        "sessionAttributes": {},
+        "intent": {
+            "slots": {
+                "phoneNumber": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "9173782836",
+                        "resolvedValues": [
+                            "9173782836"
+                        ],
+                        "interpretedValue": "9173782836"
+                    }
+                },
+                "cuisine": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "thai",
+                        "resolvedValues": [
+                            "thai"
+                        ],
+                        "interpretedValue": "thai"
+                    }
+                },
+                "location": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "new york",
+                        "resolvedValues": [
+                            "newyork"
+                        ],
+                        "interpretedValue": "newyork"
+                    }
+                },
+                "numberOfPeople": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "3",
+                        "resolvedValues": [
+                            "3"
+                        ],
+                        "interpretedValue": "3"
+                    }
+                },
+                "diningTime": {
+                    "shape": "Scalar",
+                    "value": {
+                        "originalValue": "9pm",
+                        "resolvedValues": [
+                            "21:00"
+                        ],
+                        "interpretedValue": "21:00"
+                    }
+                }
+            },
+            "confirmationState": "Confirmed",
+            "name": "DiningSuggestionsIntent",
+            "state": "ReadyForFulfillment"
+        },
+        "originatingRequestId": "86475eb4-eb15-444f-b182-381c335e8ac4"
+    },
+    "responseContentType": "text/plain; charset=utf-8",
+    "invocationSource": "FulfillmentCodeHook",
+    "messageVersion": "1.0",
+    "transcriptions": [
+        {
+            "resolvedContext": {
+                "intent": "DiningSuggestionsIntent"
+            },
+            "transcription": "yes",
+            "resolvedSlots": {},
+            "transcriptionConfidence": 1
+        }
+    ],
+    "inputMode": "Text",
+    "bot": {
+        "aliasName": "TestBotAlias",
+        "aliasId": "TSTALIASID",
+        "name": "DiningConcierge",
+        "version": "DRAFT",
+        "localeId": "en_US",
+        "id": "ADAEZAVMZP"
+    }
+}

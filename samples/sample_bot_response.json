@@ -1,0 +1,78 @@
+{
+    "ResponseMetadata": {
+        "RequestId": "80253c60-4753-4e35-835c-0baaf841e4fe",
+        "HTTPStatusCode": 200,
+        "HTTPHeaders": {
+            "x-amzn-requestid": "80253c60-4753-4e35-835c-0baaf841e4fe",
+            "strict-transport-security": "max-age=31536000; includeSubDomains",
+            "x-content-type-options": "nosniff",
+            "date": "Sun, 16 Oct 2022 05:05:35 GMT",
+            "content-type": "application/json",
+            "content-length": "813"
+        },
+        "RetryAttempts": 0
+    },
+    "messages": [
+        {
+            "content": "Pardon? I am not sure what you mean.",
+            "contentType": "PlainText"
+        }
+    ],
+    "sessionState": {
+        "dialogAction": {
+            "type": "Close"
+        },
+        "intent": {
+            "name": "FallbackIntent",
+            "slots": {},
+            "state": "ReadyForFulfillment",
+            "confirmationState": "None"
+        },
+        "sessionAttributes": {},
+        "originatingRequestId": "65ce7075-fd98-4906-96a8-19126c286fb1"
+    },
+    "interpretations": [
+        {
+            "intent": {
+                "name": "FallbackIntent",
+                "slots": {},
+                "state": "ReadyForFulfillment",
+                "confirmationState": "None"
+            }
+        },
+        {
+            "nluConfidence": {
+                "score": 0.3
+            },
+            "intent": {
+                "name": "ThankYouIntent",
+                "slots": {}
+            }
+        },
+        {
+            "nluConfidence": {
+                "score": 0.28
+            },
+            "intent": {
+                "name": "DiningSuggestionsIntent",
+                "slots": {
+                    "cuisine": null,
+                    "diningTime": null,
+                    "location": null,
+                    "numberOfPeople": null,
+                    "phoneNumber": null
+                }
+            }
+        },
+        {
+            "nluConfidence": {
+                "score": 0.14
+            },
+            "intent": {
+                "name": "GreetingIntent",
+                "slots": {}
+            }
+        }
+    ],
+    "sessionId": "assignment2"
+}
